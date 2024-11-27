@@ -5,8 +5,9 @@ import ThemeSwitch from "./components/ThemeSwitch";
 
 const page = () => {
   const { setTheme, resolvedTheme } = useTheme();
+  if (!resolvedTheme) return null;
   return (
-    <div className="p-10">
+    <div className="p-10" suppressHydrationWarning>
       <div className="flex items-center space-x-2">
         <h1
           className={`${

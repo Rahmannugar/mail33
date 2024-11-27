@@ -6,6 +6,9 @@ import { Provider } from "./util/ThemeProvider";
 export const metadata: Metadata = {
   title: "Mail 33",
   description: "This is a mail client service",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export const jostFont = Jost({ subsets: ["latin"] });
